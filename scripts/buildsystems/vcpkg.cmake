@@ -22,6 +22,8 @@ since otherwise you might be doing something with bad variables set up.
 #]===]
 # this is defined above everything else so that it can be used.
 set(Z_VCPKG_FATAL_ERROR)
+SET (CMAKE_C_COMPILER_WORKS 1)
+SET (CMAKE_CXX_COMPILER_WORKS 1)
 set(Z_VCPKG_HAS_FATAL_ERROR OFF)
 function(z_vcpkg_add_fatal_error ERROR)
     if(NOT Z_VCPKG_HAS_FATAL_ERROR)
